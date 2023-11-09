@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <title>Document</title>
+    <style>
+      body{
+        overflow-x: hidden;
+     }
+      .nav{
+        width: fit-content;
+        height: fit-content;
+        padding: 20px 40px;
+        border: 1px solid rgb(246, 193, 187);
+        z-index: 3;
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: -150px;
+      }
+      .nav span {
+        cursor: pointer;
+      }
+      .nav.active{
+        top: 10px;
+        transition: all .5s;
+      }
+      .nav ul li{
+        cursor: pointer;
+      }
+      .doodle{
+        width: 2000px;
+      }
+      .doodle img{
+         width: 100%;
+      }
+      .icon-menu{
+        cursor: pointer;
+      } 
+      .icon-menu.active{
+        display: none;
+      }
+      .contain.active{
+        transition: 1s ease-in-out;
+      }
+     .section2{
+        position: relative;
+        isolation: isolate;
+        transform: skewY(-5deg);
+     }
+     .section2 article {
+        z-index: 1000;
+     }
+     .section2::after{
+        position: absolute;
+        content: " ";
+        inset: 0;
+        z-index: -3;
+        background-color: #E74C3C;
+        transform: skewY(5deg);
+     }
+      @media screen and (min-width:750px) {
+        .nav{
+            top: 1px;
+            background: none;
+            border: none;
+            font-size: 18px;
+        }
+        .nav .span{
+            display: none;
+        }
+        .nav ul{
+            background-color: none;
+            flex-direction: row;
+            gap: 100px;
+        }
+        .nav ul li:hover{
+            color: #E74C3C;
+            text-decoration: underline;
+        }
+       
+      }
+      @media screen and (min-width:1200px) {
+        .section5{
+            position: relative;
+           height: 800px;
+        }
+      }
+    </style>
+</head> 
+<body class="text-sm">
+    <header class="w-full h-16 bg-header-color flex justify-between px-5 py-5 relative">
+        <div class="name text-custom-color font-semibold xlarger:font-bold text-lg">
+            <span>M.</span>Markt
+        </div>
+        <div class="icon-menu w-5 h-5 xlarger:hidden">
+            <img src="/images/icon/ic_outline-menu.png" alt="" class="w-full ">
+        </div>
+        <div class="nav flex flex-col bg-fade-color border-faded-color">
+            <span class="span px-2 bg-custom-color self-end mb-2 text-white hover:text-custom-color hover:bg-white">
+              x
+            </span>
+            <ul class="flex flex-col gap-4 text-custom-color font-bold">
+                <li class="hover:text-white">SignUp</li>
+                <li class="hover:text-white">Login</li>
+            </ul>
+        </div>
+        <script src="script.js"></script>
+    </header>
+    <section class="section1 w-full ml-5 mt-10 large:mb-20 xlarger:flex gap-10 xl:w-4/5 xl:mx-auto">
+        <div class="section1-content w-10/12 xlarger:self-center"  data-aos="fade-up">
+            <h2 class="pb-5 text-base font-bold xlarger:text-2xl">
+                Welcome to our <span class="text-custom-color ">Shopsmart-Marketplace</span>- Where Quality Meets Savings.
+            </h2>
+            <p class="pb-4 font-semibold xlarger:text-lg">
+                Uncover a World of Hidden Gems at Unbeatable Prices: Your Ultimate Destination for Premium Used
+                Products!
+            </p>
+            <button data-aos="fade-left" class="bg-custom-color p-3 text-primary-color rounded border border-black border-solid">
+                Join the Waitlist!
+            </button>
+        </div>
+        <div class="section1-imgs w-full mt-20 grid grid-cols-2 grid-rows-2  xlarger:gap-0 ">
+            <div class="max-w-sm h-60 row-span-2 mt-20 mr-35 xlarger:max-w-xs xl:mr-negg-mag2" data-aos="fade-right">
+                <img src="/images/Frame 1624.png" alt="" class="object-cover w-10/12">
+            </div>
+            <div class="max-w-60 h-60  xlarger:max-w-xs">
+                <img src="/images/Frame 1626.png" alt="" class="object-cover w-10/12" data-aos="fade-left">
+            </div>
+            <div class="max-w-60 h-70 mt-neg-mag small:mt-4 large:my-6 larger:my-8 xlarger:mt-negg-mag max-w-xs xtra:mt-2" data-aos="fade-left">
+                <img src="/images/Frame 1625.png" alt="" class="object-cover w-10/12">
+            </div>
+        </div>
+    </section>
+    <section data-aos="fade-right" class="section2 w-full bg-custom-color py-5 px-5 h-40">
+        <article class="w-10/12 flex justify-between mx-auto text-primary-color font-semibold">
+            <div>
+                <p>
+                    Money back <br>Guarante
+                </p>
+            </div>
+            <div class="mt-neg-mag2 xlarger:m-0">
+                <p>
+                    256-bit secure <br> payment
+                </p>
+            </div>
+            <div>
+                256-bit secure <br> payment
+            </div>
+        </article>
+    </section>
+    <section data-aos="fade-left" class="section3 mt-14 w-full mx-auto">
+        <h1 class="text-center text-xl font-bold">Top Categories</h1>
+        <article class="w-10/12 mx-auto text-center">
+            <div class="w-10/12 mx-auto grid grid-cols-2 gap-8 mt-10 xlarger:grid-cols-4">
+                <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-left">
+                    <span class="w-5">
+                        <img src="/images/icon/bi_phone.png" alt="" class="w-5 object-cover">
+                    </span>
+                    <p>
+                        Phone and Tablets
+                    </p>
+                </div>
+                <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-left">
+                    <span class="w-5">
+                        <img src="/images/icon/" alt="" class="w-5 object-cover">
+                    </span>
+                    <p>
+                        Property
+                    </p>
+                </div>
+                <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-left">
+                    <span class="w-5">
+                        <img src="/images/icon/twemoji_racing-car.png" alt="" class="w-5 object-cover">
+                    </span>
+                    <p>
+                        Vehicles
+                    </p>
+                </div>
+                <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-left">
+                    <span class="w-5">
+                        <img src="/images/icon/twemoji_chair.png" alt="" class="w-5 object-cover">
+                    </span>
+                    <p>
+                        Furniture
+                    </p>
+                </div>
+                <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-right">
+                    <span class="w-5">
+                        <img src="/images/icon/fluent-emoji-flat_laptop.png" alt="" class="w-5 object-cover">
+                    </span>
+                    <p>
+                        Electronics
+                    </p>
+                </div>
+                <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded"data-aos="flip-right">
+                    <span class="w-5">
+                        <img src="/images/icon/fxemoji_dress.png" alt="" class="w-5 object-cover">
+                    </span>
+                    <p>
+                        Fashion
+                    </p>
+                </div>
+                <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-right">
+                    <span class="w-5">
+                        <img src="/images/icon/twemoji_canned-food.png" alt="" class="w-5 object-cover">
+                    </span>
+                    <p>
+                        Food
+                    </p>
+                </div>
+                <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-right">
+                    <span class="w-5">
+                        <img src="/images/icon/noto_dog.png" alt="" class="w-5 object-cover">
+                    </span>
+                    <p>
+                        Animal and Pet
+                    </p>
+                </div>
+                <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded hidden xlarger:flex" data-aos="flip-left">
+                    <span class="w-5">
+                        <img src="/images/icon/fluent-emoji-flat_laptop.png" alt="" class="w-5 object-cover">
+                    </span>
+                    <p>
+                        Electronics
+                    </p>
+                </div>
+                <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded hidden xlarger:flex" data-aos="flip-left">
+                    <span class="w-5">
+                        <img src="/images/icon/fxemoji_dress.png" alt="" class="w-5 object-cover">
+                    </span>
+                    <p>
+                        Fashion
+                    </p>
+                </div>
+                <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded hidden xlarger:flex" data-aos="flip-left">
+                    <span class="w-5">
+                        <img src="/images/icon/twemoji_canned-food.png" alt="" class="w-5 object-cover">
+                    </span>
+                    <p>
+                        Food
+                    </p>
+                </div>
+                <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded hidden xlarger:flex"data-aos="flip-left">
+                    <span class="w-5">
+                        <img src="/images/icon/noto_dog.png" alt="" class="w-5 object-cover">
+                    </span>
+                    <p>
+                        Animal and Pet
+                    </p>
+                </div>
+                
+            </div>
+        </article>
+    </section>
+    <section data-aos="fade-right" class="section4 w-full mt-hundred xxl:w-10/12 mx-auto">
+        <article class="w-full mx-auto xlarger:grid grid-cols-2 xxl:grid-cols-4 grid-rows-2">
+            <div class="w-4/5 mx-auto text-center col-span-2" div data-aos="zoom-in">
+                <div data-aos="fade-right bg-custom-color">
+                    <h2 class="pb-4 font-black text-xl">Discover Your <span class="text-custom-color">Perfect Match!</span></h2>
+                    <p class="font-semibold pb-10 text-center">
+                        At ShopSmart, we've curated an extensive range
+                        of categories to cater to every shopper's unique
+                        preferences and interests. Whether you're on the hunt
+                        for electronics, fashion, home decor, or more, our
+                        thoughtfully organized categories
+                        make finding your dream items a breeze.
+                    </p>
+                </div>
+            </div>
+            <div class="w-full h-h-hundred xxl:" div data-aos="zoom-in">
+                <img src="/images/Frame 1622 (1).png" alt="" class="h-h-hundred object-cover w-full">
+            </div>
+            <div class="w-full p-8 bg-custom-color" data-aos="zoom-in">
+                <div class="w-48 mx-auto flex flex-col gap-4 text-primary-color" >
+                    <h2 class="font-bold text-base">Books and Hobbies</h2>
+                    <p class="leading-5">
+                        Feed your passion for reading and hobbies without breaking the bank.
+                        Explore a treasure trove of used books, art supplies, collectibles, and more.
+                    </p>
+                </div>
+            </div>
+            <div class="w-full h-h-hundred xxl:col-span-2"data-aos="zoom-out">
+                <img src="/images/Frame 1620.png" alt="" class="h-h-hundred object-cover w-full">
+            </div>
+            <div class="w-full h-h-hundred" data-aos="zoom-out">
+                <img src="/images/Frame 1621.png" alt="" class="h-h-hundred object-cover w-full">
+            </div>
+            <div class="w-full h-h-hundred hidden xxl:block" data-aos="zoom-out">
+                <img src="/images/Frame 1616.png" alt="" class="h-h-hundred object-cover w-full">
+            </div>
+        </article>
+    </section>
+    <section data-aos="fade-left" class="section5 w-full bg-black text-white mt-20">
+        <div class="text-center  py-10">
+            <h1 class="font-black text-base">How the
+                <span class="text-custom-color">Shopsmart Mobile App Works.</span>
+            </h1>
+            <p class="hidden">Explore the Magic of Our App</p>
+        </div>
+        <article class="w-10/12 mx-auto flex flex-col gap-10 xxl:grid grid-cols-3 grid-rows-3">
+        <div class="w-4/5 mx-auto max-w-xs mb-20 xxl:col-start-2 row-start-1 row-end-3">
+            <img src="/images/iPhone 14 Pro Space Black Mockup.png" alt="" class="w-full object-cover">
+        </div>
+            <div>
+                <div class="flex gap-4 pb-5">
+                    <span class="w-5">
+                        <img src="/images/icon/noto_light-bulb.png" alt=""
+                            class="w-5 object-cover">
+                        </span> <h1 class="font-bold text-sm">Browse Extensive Collections</h1>
+                </div>
+                <p class="leading-5">
+                    Our app boasts an extensive collection of used products
+                    ranging from electronics and fashion to home decor and more.
+                    Easily navigate through diverse categories,
+                    making your search effortless and enjoyable.
+                </p>
+            </div>
+            <div>
+                <div class="flex gap-4 pb-5 row">
+                    <span class="w-5">
+                        <img src="/images/icon/noto_light-bulb.png" alt="" class="w-5 object-cover">
+                    </span> <h1 class="font-bold text-sm">Smart Recommendations Engine </h1>
+                </div>
+                <p class="leading-5">
+                    Through advanced machine learning, the app learns your
+                    preferences and presents personalized recommendations,
+                    ensuring each discovery feels tailor-made just for you.
+                </p>
+            </div>
+            <div>
+                <div class="flex gap-4 pb-5">
+                    <span class="w-5">
+                        <img src="/images/icon/noto_light-bulb.png" alt=""class="w-5 object-cover">
+                    </span> <h1 class="font-bold text-sm">Trustworthy Seller Ratings and Reviews </h1>
+                </div>
+                <p class="leading-5">
+                    Our community-driven rating and review system allows you
+                    to assess sellers' reputations, so you can buy with confidence.
+                    Make informed decisions
+                    based on authentic feedback from fellow shoppers.
+                </p>
+            </div>
+            <div>
+                <div class="flex gap-4 pb-5">
+                    <span class="w-5">
+                        <img src="/images/icon/noto_light-bulb.png" alt="" class="w-5 object-cover">
+                    </span> <h1 class="font-bold text-sm">Instant Chat Support </h1>
+                </div>
+                <p class="leading-5">
+                    Our in-app chat feature lets you reach out for
+                    quick answers to your queries, ensuring your shopping experien
+                    ce remains delightful from start to finish.
+                </p>
+            </div>
+        </article>
+    </section>
+    <section class="section6 large:flex gap-2 mt-10 justify-evenly w-10/12 mx-auto" data-aos="fade-right">
+        <div class="pt-14 bg-primary-color" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="text-center w-4/5 mx-auto">
+                <h3 class="font-bold text-base pb-5">Buyers</h3>
+                <p>Discover a world of incredible deals and hidden gems,
+                    curated just for you. As a buyer on our platform, you can explore
+                    a vast collection of pre-owned products.</p>
+                <button class="bg-custom-color py-2 px-4 mt-4 rounded border border-black border-solid text-primary-color">Become a buyer</button>
+            </div>
+            <div class="max-w-xs mx-auto" >
+            <img src="/images/Happy woman with shopping bags.png" alt="" class="max-w-full object-cover">
+            </div>
+        </div>
+        <div class="pt-14 bg-primary-color mt-8 large:mt-0" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="text-center w-4/5 mx-auto">
+                <h3 class="font-bold text-base pb-5">Sellers</h3>
+                <p>As a seller on ShopSmart, you can effortlessly list
+                    your pre-owned items for sale and reach a wide audience
+                    of eager buyers. Whatever it's,
+                    there's a place for everything on our platform.</p>
+                <button  class="bg-custom-color py-2 px-4 mt-4 rounded border border-black border-solid text-primary-color">List your product</button>
+            </div>
+            <div  class="max-w-xs mx-auto mt-4">
+            <img src="/images/fast food worker.png" alt="" class="max-w-full object-cover">
+            </div>
+        </div>
+    </section>
+    <section class="section7">
+        <article class="mobile my-10 xlarger:hidden">
+            <div class="heading text-center pb-4 text-2xl font-bold">
+                <p>User Review and <span class="text-custom-color">Testimonial</span></p>
+            </div>
+            <div class="container-mobile w-10/12 mx-auto flex flex-col gap-2">
+                <div class="boxes-mobile p-4 py-10 bg-fade-color border border-faded-color border-dashed rounded-xl"  data-aos="zoom-out-up">
+                    <div class="image w-12 rounded  mb-4">
+                        <img src="/images/Frame 1625 (1).png" alt="" class="w-full object-cover rounded">
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold pb-1">John Doe</p>
+                        <div class="flex gap-2">
+                            <p>Verified Buyer</p>
+                            <span class="w-4"><img src="/images//icon/icon-park-solid_success.png" alt="" class="w-4 object-cover"></span>
+                        </div>
+                    </div>
+                    <div class="content font-semibold mt-2">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+                            Veniam error esse assumenda reprehenderit accusantium eveniet <br> 
+                            magnam modi repudiandae! Aut veritatis voluptate tenetur quae <br>
+                           debitis odio ullam quis obcaecati, incidunt impedit.</p>
+                    </div>
+                </div>
+                <div class="boxes-mobile p-4 py-10 bg-fade-color border border-faded-color border-dashed rounded-xl" data-aos="zoom-out-up">
+                    <div class="image w-12 rounded  mb-4">
+                        <img src="/images/Frame 1625 (1).png" alt="" class="w-full object-cover rounded">
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold pb-1">John Doe</p>
+                        <div class="flex gap-2">
+                            <p>Verified Buyer</p>
+                            <span class="w-4"><img src="/images//icon/icon-park-solid_success.png" alt="" class="w-4 object-cover"></span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+                            Veniam error esse assumenda reprehenderit accusantium eveniet <br> 
+                            magnam modi repudiandae! Aut veritatis voluptate tenetur quae <br>
+                           debitis odio ullam quis obcaecati, incidunt impedit.</p>
+                    </div>
+                </div>
+                <div class="boxes-mobile p-4 py-10 bg-fade-color border border-faded-color border-dashed rounded-xl" data-aos="zoom-out-up">
+                    <div class="image w-12 rounded  mb-4">
+                        <img src="/images/Frame 1625 (1).png" alt="" class="w-full object-cover rounded">
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold pb-1">John Doe</p>
+                        <div class="flex gap-2">
+                            <p>Verified Buyer</p>
+                            <span class="w-4"><img src="/images//icon/icon-park-solid_success.png" alt="" class="w-4 object-cover"></span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+                            Veniam error esse assumenda reprehenderit accusantium eveniet <br> 
+                            magnam modi repudiandae! Aut veritatis voluptate tenetur quae <br>
+                           debitis odio ullam quis obcaecati, incidunt impedit.</p>
+                    </div>
+                </div>
+                <div class="boxes-mobile p-4 py-10 bg-fade-color border border-faded-color border-dashed rounded-xl" data-aos="zoom-out-up">
+                    <div class="image w-12 rounded  mb-4">
+                        <img src="/images/Frame 1625 (1).png" alt="" class="w-full object-cover rounded">
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold pb-1">John Doe</p>
+                        <div class="flex gap-2">
+                            <p>Verified Buyer</p>
+                            <span class="w-4"><img src="/images//icon/icon-park-solid_success.png" alt="" class="w-4 object-cover"></span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p class="text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+                            Veniam error esse assumenda reprehenderit accusantium eveniet <br> 
+                            magnam modi repudiandae! Aut veritatis voluptate tenetur quae <br>
+                           debitis odio ullam quis obcaecati, incidunt impedit.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="my-20 mx-auto hidden xlarger:block" style="width: 750px; overflow-x: hidden;">
+           <div class="contain" style="width: 750px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;">
+            <div class="boxes flex gap-10"  style="width: 750px;">
+                <div class="name p-4">
+                    <p>
+                        John Doe
+                    </p>
+                    <div class="verify flex gap-2">
+                        <p>Verified Buyer</p>
+                        <span class="w-4 self-center">
+                            <img src="/images/icon/icon-park-solid_success.png" alt="" class="w-4 object-cover">
+                        </span>
+                    </div>
+                    <div class="content" style="width: 325px;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempora aut suscipit <br>
+                             repudiandae est architecto iure iusto! Omnis iure eum quia! 
+                            <br> Exercitationem culpa quod itaque natus reprehenderit unde ipsa soluta?
+                        </p>
+                    </div>
+                </div>
+                <div class="image" style="width: 425px;">
+                    <img src="/images/Frame 1617.png" alt="">
+                </div>
+            </div>
+            <div class="boxes flex gap-10"  style="width: 750px;">
+                <div class="name p-4">
+                    <p>
+                        John Doe
+                    </p>
+                    <div class="verify flex gap-2">
+                        <p>Verified Buyer</p>
+                        <span class="w-4 self-center">
+                            <img src="/images/icon/icon-park-solid_success.png" alt="" class="w-4 object-cover">
+                        </span>
+                    </div>
+                    <div class="content" style="width: 325px;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempora aut suscipit <br>
+                             repudiandae est architecto iure iusto! Omnis iure eum quia! 
+                            <br> Exercitationem culpa quod itaque natus reprehenderit unde ipsa soluta?
+                        </p>
+                    </div>
+                </div>
+                <div class="image" style="width: 425px;">
+                    <img src="/images/Frame 1617.png" alt="">
+                </div>
+            </div>
+            <div class="boxes flex gap-10"  style="width: 750px;">
+                <div class="name p-4">
+                    <p>
+                        John Doe
+                    </p>
+                    <div class="verify flex gap-2">
+                        <p>Verified Buyer</p>
+                        <span class="w-4 self-center">
+                            <img src="/images/icon/icon-park-solid_success.png" alt="" class="w-4 object-cover">
+                        </span>
+                    </div>
+                    <div class="content" style="width: 325px;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempora aut suscipit <br>
+                             repudiandae est architecto iure iusto! Omnis iure eum quia! 
+                            <br> Exercitationem culpa quod itaque natus reprehenderit unde ipsa soluta?
+                        </p>
+                    </div>
+                </div>
+                <div class="image" style="width: 425px;">
+                    <img src="/images/Frame 1617.png" alt="">
+                </div>
+            </div>
+            <div class="boxes flex gap-10"  style="width: 750px;">
+                <div class="name p-4">
+                    <p>
+                        John Doe
+                    </p>
+                    <div class="verify flex gap-2">
+                        <p>Verified Buyer</p>
+                        <span class="w-4 self-center">
+                            <img src="/images/icon/icon-park-solid_success.png" alt="" class="w-4 object-cover">
+                        </span>
+                    </div>
+                    <div class="content" style="width: 325px;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempora aut suscipit <br>
+                             repudiandae est architecto iure iusto! Omnis iure eum quia! 
+                            <br> Exercitationem culpa quod itaque natus reprehenderit unde ipsa soluta?
+                        </p>
+                    </div>
+                </div>
+                <div class="image" style="width: 425px;">
+                    <img src="/images/Frame 1617.png" alt="">
+                </div>
+            </div>
+           </div>
+           
+           <div class="text-center mt-10 flex mx-auto w-60 justify-between">
+          <span class="left bg-custom-color rounded-full text-white text-lg w-12" style=" cursor:pointer;">
+            <
+          </span>
+          <span class="right bg-custom-color rounded-full text-white text-lg w-12"  style=" cursor:  pointer;">
+            >
+          </span>
+        </div>
+        <script>
+            const container = document.querySelector(".contain")
+            const boxes = document.querySelector(".boxes").offsetWidth
+            let  currentIndex = 0;
+
+            function moveToIndex(index){
+                if(index >= 0 && index <= 4)
+                currentIndex = index
+                let translateX = -currentIndex * boxes
+                console.log(translateX)
+                container.style.transform = `translateX(${translateX}px)`
+                container.classList.add("active")
+                if(index==4){
+                 moveToIndex(0)   
+               
+                }
+            }
+            
+            function next(){
+                moveToIndex(currentIndex + 1)
+            }
+            function prev(){
+                moveToIndex(currentIndex - 1)
+            }
+            document.querySelector(".left").addEventListener("click" , prev)
+            document.querySelector(".right").addEventListener("click" , next)
+        </script>
+        </article>
+    </section>
+    <section class="section8 bg-black text-white w-full p-2 pb-10" data-aos="fade-right">
+        <h1 class="text-center py-5 font-black text-lg pb-10">Frequently Asked Questions</h1>
+        <article class="w-10/12 mx-auto xxl:flex">
+            <article class="flex flex-col gap-10 w-10/12 mx-auto">
+                <div class="relative">
+                    <div id="open" class=" flex gap-6">
+                        <p class="text-sm font-bold">
+                            Are the used productss in good condition and reliable? 
+
+                        </p> 
+                    <span class="w-6">
+                        <img src="/images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover rotate">
+                    </span>
+                    </div>
+                    <div id="hid"  class="hidden">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam repellendus quae
+                        sequi vero ex, nemo eum officia. Esse, sunt voluptatum? Modi obcaecati distinctio inventore
+                        officia quisquam molestias earum illum.
+                        Quos, labore tempora. Modi cupiditate quasi magnam odio assumenda sint debitis consequuntur hic,
+                        odit voluptate fuga vero. Commodi ullam, cumque dolor, harum sed delectus, perspiciatis
+                        voluptatem esse dolorum aspernatur velit?
+                        Consequuntur nesciunt ea quam ex molestiae non tenetur quibusdam dolorem molestias odit optio
+                        reprehenderit beatae officiis reiciendis soluta veniam fuga sunt rem earum aut, accusantium
+                        assumenda adipisci! Dicta, voluptatum inventore.
+                    </div>
+                </div>
+                <div id="open">
+                    <div class="flex  flex gap-8">
+                        <p class="text-sm font-bold">
+                            How secure aare the transactions on your website?
+                        </p>
+                        <span class="w-6">
+                            <img src="/images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover rotate">
+                        </span>
+                    </div>
+                    
+                    <div id="hid" class="hidden">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam repellendus quae
+                        sequi vero ex, nemo eum officia. Esse, sunt voluptatum? Modi obcaecati distinctio inventore
+                        officia quisquam molestias earum illum.
+                        Quos, labore tempora. Modi cupiditate quasi magnam odio assumenda sint debitis consequuntur hic,
+                        odit voluptate fuga vero. Commodi ullam, cumque dolor, harum sed delectus, perspiciatis
+                        voluptatem esse dolorum aspernatur velit?
+                        Consequuntur nesciunt ea quam ex molestiae non tenetur quibusdam dolorem molestias odit optio
+                        reprehenderit beatae officiis reiciendis soluta veniam fuga sunt rem earum aut, accusantium
+                        assumenda adipisci! Dicta, voluptatum inventore.
+                    </div>
+                </div>
+                <div id="open">
+                    <div class="flex  flex gap-8">
+                        <p class="text-sm font-bold">
+                            What if i recieve a product that doesn't meet my expectations ?
+                        </p>
+                        <span class="w-6">
+                            <img src="/images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover rotate">
+                        </span>
+                    </div>
+                    <div id="hid" class="hidden">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam repellendus quae
+                        sequi vero ex, nemo eum officia. Esse, sunt voluptatum? Modi obcaecati distinctio inventore
+                        officia quisquam molestias earum illum.
+                        Quos, labore tempora. Modi cupiditate quasi magnam odio assumenda sint debitis consequuntur hic,
+                        odit voluptate fuga vero. Commodi ullam, cumque dolor, harum sed delectus, perspiciatis
+                        voluptatem esse dolorum aspernatur velit?
+                        Consequuntur nesciunt ea quam ex molestiae non tenetur quibusdam dolorem molestias odit optio
+                        reprehenderit beatae officiis reiciendis soluta veniam fuga sunt rem earum aut, accusantium
+                        assumenda adipisci! Dicta, voluptatum inventore.
+                    </div>
+                </div>
+                <div id="open">
+                    <div class="flex  flex gap-8">
+                        <p class="text-sm font-bold">
+                            Can i trust the seller on your platform?
+                        </p>
+                        <span class="w-6">
+                            <img src="/images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover rotate">
+                        </span>
+                    </div>
+
+                    <div id="hid" class="hidden">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam repellendus quae
+                        sequi vero ex, nemo eum officia. Esse, sunt voluptatum? Modi obcaecati distinctio inventore
+                        officia quisquam molestias earum illum.
+                        Quos, labore tempora. Modi cupiditate quasi magnam odio assumenda sint debitis consequuntur hic,
+                        odit voluptate fuga vero. Commodi ullam, cumque dolor, harum sed delectus, perspiciatis
+                        voluptatem esse dolorum aspernatur velit?
+                        Consequuntur nesciunt ea quam ex molestiae non tenetur quibusdam dolorem molestias odit optio
+                        reprehenderit beatae officiis reiciendis soluta veniam fuga sunt rem earum aut, accusantium
+                        assumenda adipisci! Dicta, voluptatum inventore.
+                    </div>
+                </div>
+                <div  id="open">
+                    <div class="flex  flex gap-8">
+                        <p class="text-sm font-bold">
+                            How do i sell my used items on your website?
+                        </p>
+                        <span class="w-6">
+                            <img src="/images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover ">
+                        </span>
+                        </div>
+                    <div id="hid" class="hidden">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam repellendus quae
+                        sequi vero ex, nemo eum officia. Esse, sunt voluptatum? Modi obcaecati distinctio inventore
+                        officia quisquam molestias earum illum.
+                        Quos, labore tempora. Modi cupiditate quasi magnam odio assumenda sint debitis consequuntur hic,
+                        odit voluptate fuga vero. Commodi ullam, cumque dolor, harum sed delectus, perspiciatis
+                        voluptatem esse dolorum aspernatur velit?
+                        Consequuntur nesciunt ea quam ex molestiae non tenetur quibusdam dolorem molestias odit optio
+                        reprehenderit beatae officiis reiciendis soluta veniam fuga sunt rem earum aut, accusantium
+                        assumenda adipisci! Dicta, voluptatum inventore.
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="doodle max-w-xs hidden xxl:block">
+                     <!-- <div>
+            <dotlottie-player class="hidden " src="https://lottie.host/e3a0b2ac-e4ac-459a-8586-2215b6d668b0/QrpwxvZDf1.json" background="transparent" speed="0.5" style="width: 200px; height: 200px;" loop autoplay></dotlottie-player>
+        </div> -->
+                    <img src="/images/Busnesswoman thinking about work with questions hanging over her head.png" alt="" class="">
+                </div>
+            </article>
+        </article>
+        <script>
+            const rotate = document.querySelector(".rotate")
+            const hide = document.getElementById("hid")
+            document.getElementById("open").addEventListener("click", ()=>{
+            if(hide.classList.contains("hidden")){
+                hide.classList.remove("hidden")
+                rotate.style.transform = "rotate(180deg)"
+            }
+            else{
+                hide.classList.add("hidden")
+                rotate.style.transform = "rotate(0deg)"
+            }
+}) 
+        </script>
+        </section>
+        <section class="section9 w-full bg-custom-color text-primary-color xtra:flex xtra:w-10/12 mx-auto xtra:my-20 xtra:rounded-xl" data-aos="fade-left">
+        <article>
+            <div class="w-10/12 mx-auto pt-10 text-center flex flex-col gap-4">
+                <h1 class="font-bold text-xl">Download our App on Android and iOS</h1>
+                <p class="font-semibold text-sm">
+                    Our mobile app, available for both android and ios devices allows you toexplore an array of pre-owned
+                    treasures, discover personalised recommendatios and enjoy a seamless shopping experiences on the go
+                </p>
+                </div>
+            <div class=" mx-2 flex justify-between mt-4 small:w-4/5 small:mx-auto">
+                <div class="bg-black px-8 py-2 text-primary-color rounded-xl">
+                    <a href="#" class="flex gap-4 relative">
+                        <span class="self-flex">
+                            <img src="/images/icon/Google Play.png" class="w-5 object-cover" alt="">
+                        </span>
+                        <p>GET IT ON <br>
+                           Google Play
+                        </p>
+                    </a>
+                </div>
+                <div class="bg-black px-8 py-2 text-primary-color rounded-xl">
+                    <a href="#" class="flex gap-4 relative">
+                        <span class="self-flex">
+                            <img src="/images/icon/Apple Logo.png"  class="w-5 object-cover"alt="">
+                        </span>
+                        <p class="">Download on the <br>
+                           <span>App Store</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="last-div w-10/12 mx-auto mt-10">
+                <div class="max-w-xs mx-auto">
+                <img src="/images/Group 1.png" alt="" class="max-w-full object-cover xtra:hidden">
+                </div>
+                <img src="/images/Group 1 (1).png" alt="" class="show-desktop hidden xtra:block">
+            </div>
+        </article>
+        </section>
+        <footer data-aos="fade-right" class="bg-black text-white px-4 py-8 flex flex-col gap-6">
+            <div class="icons flex gap-4">
+                <div class="w-5">
+                    <img src="/images/skill-icons_twitter.png" alt="" class="w-5 object-cover">
+                </div>
+                <div class="w-5">
+                    <img src="/images/flat-color-icons_google.png" alt="" class="w-5 object-cover">
+                </div>
+                <div  class="w-5">
+                    <img src="/images/logos_facebook.png" alt=""  class="w-5 object-cover">
+                </div>
+            </div>
+            <div class="self-center">
+                <p class="font-black text-base"><span>M</span>. Markt</p>
+            </div>
+            <div class="self-center">
+                <p>All Rights Reserved 2023</p>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init( {
+                duration: 1000,
+            });
+
+</script>
+</body>
+
+</html>
