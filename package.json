@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "react-scripts build"
+    "build": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -11,5 +11,8 @@
   "description": "",
   "devDependencies": {
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "react-scripts": "^5.0.1"
   }
 }
