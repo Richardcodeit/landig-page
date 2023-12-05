@@ -1276,3 +1276,94 @@ video {
     width: 80%;
   }
 }
+body{
+  overflow-x: hidden;
+}
+.nav{
+  width: fit-content;
+  height: fit-content;
+  padding: 20px 40px;
+  border: 1px solid rgb(246, 193, 187);
+  z-index: 3;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: -150px;
+}
+.nav span {
+  cursor: pointer;
+}
+.nav.active{
+  top: 10px;
+  transition: all .5s;
+}
+.nav ul li{
+  cursor: pointer;
+}
+.doodle{
+  width: 2000px;
+}
+.doodle img{
+   width: 100%;
+}
+.icon-menu{
+  cursor: pointer;
+} 
+.icon-menu.active{
+  display: none;
+}
+.contain.active{
+  transition: 1s ease-in-out;
+}
+.section2{
+  position: relative;
+  isolation: isolate;
+  transform: skewY(-5deg);
+}
+.section2 article {
+  z-index: 1000;
+}
+.section2::after{
+  position: absolute;
+  content: " ";
+  inset: 0;
+  z-index: -3;
+  background-color: #E74C3C;
+  transform: skewY(5deg);
+}
+@media screen and (min-width:750px) {
+   
+   p{
+    font-size: 18px;
+   }
+  .nav{
+      top: 1px;
+      background: none;
+      border: none;
+      font-size: 18px;
+  }
+  .nav .span{
+      display: none;
+  }
+  .nav ul{
+      background-color: none;
+      flex-direction: row;
+      gap: 10px;
+  }
+  .nav ul li:last-child:hover{
+      background-color: white;
+      color: #E74C3C;
+  }
+  .section5 h1{
+    font-size: 20px;
+  }
+  .section5 p {
+    line-height: 25px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .section5{
+      position: relative;
+     height: 800px;
+  }
+}

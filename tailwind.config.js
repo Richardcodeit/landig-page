@@ -16,7 +16,8 @@ module.exports = {
         'negg-mag' : '-50px',
         'negg-mag2' : '-200px',
         'neg-mag2' : '50px',
-        'hundred' : '100px'
+        'hundred' : '100px',
+        'minus' : "-10px"
       },
       height:{
         'h-hundred' : '500px'
@@ -38,7 +39,7 @@ module.exports = {
         'lg' : '1600px'
       },
       fontSize:{
-        'eight-px' : '8px'
+        'eight' : '8px'
       },
       top:{
         'negative' : '-100px'

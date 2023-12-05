@@ -8,90 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <title>Document</title>
-    <style>
-      body{
-        overflow-x: hidden;
-     }
-      .nav{
-        width: fit-content;
-        height: fit-content;
-        padding: 20px 40px;
-        border: 1px solid rgb(246, 193, 187);
-        z-index: 3;
-        display: flex;
-        position: absolute;
-        right: 10px;
-        top: -150px;
-      }
-      .nav span {
-        cursor: pointer;
-      }
-      .nav.active{
-        top: 10px;
-        transition: all .5s;
-      }
-      .nav ul li{
-        cursor: pointer;
-      }
-      .doodle{
-        width: 2000px;
-      }
-      .doodle img{
-         width: 100%;
-      }
-      .icon-menu{
-        cursor: pointer;
-      } 
-      .icon-menu.active{
-        display: none;
-      }
-      .contain.active{
-        transition: 1s ease-in-out;
-      }
-     .section2{
-        position: relative;
-        isolation: isolate;
-        transform: skewY(-5deg);
-     }
-     .section2 article {
-        z-index: 1000;
-     }
-     .section2::after{
-        position: absolute;
-        content: " ";
-        inset: 0;
-        z-index: -3;
-        background-color: #E74C3C;
-        transform: skewY(5deg);
-     }
-      @media screen and (min-width:750px) {
-        .nav{
-            top: 1px;
-            background: none;
-            border: none;
-            font-size: 18px;
-        }
-        .nav .span{
-            display: none;
-        }
-        .nav ul{
-            background-color: none;
-            flex-direction: row;
-            gap: 100px;
-        }
-        .nav ul li:hover{
-            color: #E74C3C;
-            text-decoration: underline;
-        }
-       
-      }
-      @media screen and (min-width:1200px) {
-        .section5{
-            position: relative;
-           height: 800px;
-        }
-      }
-    </style>
 </head> 
 <body class="text-sm">
     <header class="w-full h-16 bg-header-color flex justify-between px-5 py-5 relative">
@@ -105,9 +21,9 @@
             <span class="span px-2 bg-custom-color self-end mb-2 text-white hover:text-custom-color hover:bg-white">
               x
             </span>
-            <ul class="flex flex-col gap-4 text-custom-color font-bold">
-                <li class="hover:text-white">SignUp</li>
-                <li class="hover:text-white">Login</li>
+            <ul class="flex flex-col font-bold">
+                <li class=" font-semibold border px-8 py-2 text-sm border-black border-solid rounded">SignUp</li>
+                <li class=" bg-custom-color text-white font-semibold border px-8 py-2 text-sm border-black border-solid rounded" text-sm">Login</li>
             </ul>
         </div>
         <script src="script.js"></script>
@@ -296,7 +212,7 @@
             </div>
         </article>
     </section>
-    <section data-aos="fade-left" class="section5 w-full bg-black text-white mt-20">
+    <section data-aos="fade-left" class="section5 w-full bg-black text-white pb-10">
         <div class="text-center  py-10">
             <h1 class="font-black text-base">How the
                 <span class="text-custom-color">Shopsmart Mobile App Works.</span>
@@ -742,10 +658,10 @@
                     treasures, discover personalised recommendatios and enjoy a seamless shopping experiences on the go
                 </p>
                 </div>
-            <div class=" mx-2 flex justify-between mt-4 small:w-4/5 small:mx-auto">
-                <div class="bg-black px-8 py-2 text-primary-color rounded-xl">
+            <div class=" mx-2 flex justify-evenly mt-4 small:w-4/5 small:mx-auto" style="font-size: 10px;">
+                <div class="bg-black px-2 py-2 text-primary-color rounded-xl">
                     <a href="#" class="flex gap-4 relative">
-                        <span class="self-flex">
+                        <span class="self-center">
                             <img src="/images/icon/Google Play.png" class="w-5 object-cover" alt="">
                         </span>
                         <p>GET IT ON <br>
@@ -753,12 +669,12 @@
                         </p>
                     </a>
                 </div>
-                <div class="bg-black px-8 py-2 text-primary-color rounded-xl">
+                <div class="bg-black px-2 py-2 text-primary-color rounded-xl">
                     <a href="#" class="flex gap-4 relative">
-                        <span class="self-flex">
+                        <span class="self-center">
                             <img src="/images/icon/Apple Logo.png"  class="w-5 object-cover"alt="">
                         </span>
-                        <p class="">Download on the <br>
+                        <p class="text">Download on the <br>
                            <span>App Store</span>
                         </p>
                     </a>
