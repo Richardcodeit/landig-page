@@ -9,16 +9,33 @@ document.querySelector(".span").addEventListener("click",()=>{
     document.querySelector(".nav").style.transition = ".5s"
     icon.classList.remove("active")
 })
-
-// const hid = document.getElementById("hid")
-// const rotate = document.getElementById("rot")
-// const open = document.querySelectorAll("#open").addEventListener("click" , function(){
-//    if(hid.classList.contains("hidden")){
-//     hid.classList.remove("hidden")
-//     rotate.style.transform = "rotate(180deg)"
-//    }
-//    else{
-//     hid.classList.add("hidden")
-//     rotate.style.transform = "rotate(0deg)"
-//    }
-// })
+const show = document.querySelectorAll(".open")
+show.forEach(box =>{
+   box.addEventListener("click" , ()=>{
+       const hiddenElement = box.nextElementSibling;
+       hiddenElement.classList.add("hidden")
+       if(!hiddenElement.classList.contains("active")){
+       hiddenElement.classList.add("active")
+    }
+    else{
+        hiddenElement.classList.remove("active")
+        rotateElement.classList.remove("rota")
+    }
+   })
+})
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  AOS.init( {
+    duration: 1000,
+});

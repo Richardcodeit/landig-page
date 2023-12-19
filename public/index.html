@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <title>Document</title>
 </head> 
@@ -15,20 +15,20 @@
             <span>M.</span>Markt
         </div>
         <div class="icon-menu w-5 h-5 xlarger:hidden">
-            <img src="/images/icon/ic_outline-menu.png" alt="" class="w-full ">
+            <img src="images/icon/ic_outline-menu.png" alt="" class="w-full ">
         </div>
         <div class="nav flex flex-col bg-fade-color border-faded-color">
             <span class="span px-2 bg-custom-color self-end mb-2 text-white hover:text-custom-color hover:bg-white">
               x
             </span>
-            <ul class="flex flex-col font-bold">
-                <li class=" font-semibold border px-8 py-2 text-sm border-black border-solid rounded">SignUp</li>
-                <li class=" bg-custom-color text-white font-semibold border px-8 py-2 text-sm border-black border-solid rounded" text-sm">Login</li>
+            <ul class="flex flex-col font-bold gap-4">
+                <li><a href="signin.html">Sign Up</a></li>
+                <li>Login</li>
             </ul>
         </div>
-        <script src="script.js"></script>
+        <!-- <script src="script.js"></script> -->
     </header>
-    <section class="section1 w-full ml-5 mt-10 large:mb-20 xlarger:flex gap-10 xl:w-4/5 xl:mx-auto">
+    <section class="section-one w-full ml-5 mt-10 large:mb-20 xlarger:flex gap-10">
         <div class="section1-content w-10/12 xlarger:self-center"  data-aos="fade-up">
             <h2 class="pb-5 text-base font-bold xlarger:text-2xl">
                 Welcome to our <span class="text-custom-color ">Shopsmart-Marketplace</span>- Where Quality Meets Savings.
@@ -43,17 +43,17 @@
         </div>
         <div class="section1-imgs w-full mt-20 grid grid-cols-2 grid-rows-2  xlarger:gap-0 ">
             <div class="max-w-sm h-60 row-span-2 mt-20 mr-35 xlarger:max-w-xs xl:mr-negg-mag2" data-aos="fade-right">
-                <img src="/images/Frame 1624.png" alt="" class="object-cover w-10/12">
+                <img src="images/Frame 1624.png" alt="" class="object-cover w-10/12">
             </div>
             <div class="max-w-60 h-60  xlarger:max-w-xs">
-                <img src="/images/Frame 1626.png" alt="" class="object-cover w-10/12" data-aos="fade-left">
+                <img src="images/Frame 1626.png" alt="" class="object-cover w-10/12" data-aos="fade-left">
             </div>
             <div class="max-w-60 h-70 mt-neg-mag small:mt-4 large:my-6 larger:my-8 xlarger:mt-negg-mag max-w-xs xtra:mt-2" data-aos="fade-left">
-                <img src="/images/Frame 1625.png" alt="" class="object-cover w-10/12">
+                <img src="images/Frame 1625.png" alt="" class="object-cover w-10/12">
             </div>
         </div>
     </section>
-    <section data-aos="fade-right" class="section2 w-full bg-custom-color py-5 px-5 h-40">
+    <section data-aos="fade-right" class="section-two w-full bg-custom-color py-5 px-5 h-40">
         <article class="w-10/12 flex justify-between mx-auto text-primary-color font-semibold">
             <div>
                 <p>
@@ -70,13 +70,13 @@
             </div>
         </article>
     </section>
-    <section data-aos="fade-left" class="section3 mt-14 w-full mx-auto">
+    <section data-aos="fade-left" class="section-three mt-14 w-full mx-auto">
         <h1 class="text-center text-xl font-bold">Top Categories</h1>
         <article class="w-10/12 mx-auto text-center">
             <div class="w-10/12 mx-auto grid grid-cols-2 gap-8 mt-10 xlarger:grid-cols-4">
                 <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-left">
                     <span class="w-5">
-                        <img src="/images/icon/bi_phone.png" alt="" class="w-5 object-cover">
+                        <img src="images/icon/bi_phone.png" alt="" class="w-5 object-cover">
                     </span>
                     <p>
                         Phone and Tablets
@@ -84,7 +84,7 @@
                 </div>
                 <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-left">
                     <span class="w-5">
-                        <img src="/images/icon/" alt="" class="w-5 object-cover">
+                        <img src="images/icon/" alt="" class="w-5 object-cover">
                     </span>
                     <p>
                         Property
@@ -92,7 +92,7 @@
                 </div>
                 <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-left">
                     <span class="w-5">
-                        <img src="/images/icon/twemoji_racing-car.png" alt="" class="w-5 object-cover">
+                        <img src="images/icon/twemoji_racing-car.png" alt="" class="w-5 object-cover">
                     </span>
                     <p>
                         Vehicles
@@ -100,7 +100,7 @@
                 </div>
                 <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-left">
                     <span class="w-5">
-                        <img src="/images/icon/twemoji_chair.png" alt="" class="w-5 object-cover">
+                        <img src="images/icon/twemoji_chair.png" alt="" class="w-5 object-cover">
                     </span>
                     <p>
                         Furniture
@@ -108,7 +108,7 @@
                 </div>
                 <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-right">
                     <span class="w-5">
-                        <img src="/images/icon/fluent-emoji-flat_laptop.png" alt="" class="w-5 object-cover">
+                        <img src="images/icon/fluent-emoji-flat_laptop.png" alt="" class="w-5 object-cover">
                     </span>
                     <p>
                         Electronics
@@ -116,7 +116,7 @@
                 </div>
                 <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded"data-aos="flip-right">
                     <span class="w-5">
-                        <img src="/images/icon/fxemoji_dress.png" alt="" class="w-5 object-cover">
+                        <img src="images/icon/fxemoji_dress.png" alt="" class="w-5 object-cover">
                     </span>
                     <p>
                         Fashion
@@ -124,7 +124,7 @@
                 </div>
                 <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-right">
                     <span class="w-5">
-                        <img src="/images/icon/twemoji_canned-food.png" alt="" class="w-5 object-cover">
+                        <img src="images/icon/twemoji_canned-food.png" alt="" class="w-5 object-cover">
                     </span>
                     <p>
                         Food
@@ -132,7 +132,7 @@
                 </div>
                 <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded" data-aos="flip-right">
                     <span class="w-5">
-                        <img src="/images/icon/noto_dog.png" alt="" class="w-5 object-cover">
+                        <img src="images/icon/noto_dog.png" alt="" class="w-5 object-cover">
                     </span>
                     <p>
                         Animal and Pet
@@ -140,7 +140,7 @@
                 </div>
                 <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded hidden xlarger:flex" data-aos="flip-left">
                     <span class="w-5">
-                        <img src="/images/icon/fluent-emoji-flat_laptop.png" alt="" class="w-5 object-cover">
+                        <img src="images/icon/fluent-emoji-flat_laptop.png" alt="" class="w-5 object-cover">
                     </span>
                     <p>
                         Electronics
@@ -148,7 +148,7 @@
                 </div>
                 <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded hidden xlarger:flex" data-aos="flip-left">
                     <span class="w-5">
-                        <img src="/images/icon/fxemoji_dress.png" alt="" class="w-5 object-cover">
+                        <img src="images/icon/fxemoji_dress.png" alt="" class="w-5 object-cover">
                     </span>
                     <p>
                         Fashion
@@ -156,7 +156,7 @@
                 </div>
                 <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded hidden xlarger:flex" data-aos="flip-left">
                     <span class="w-5">
-                        <img src="/images/icon/twemoji_canned-food.png" alt="" class="w-5 object-cover">
+                        <img src="images/icon/twemoji_canned-food.png" alt="" class="w-5 object-cover">
                     </span>
                     <p>
                         Food
@@ -164,7 +164,7 @@
                 </div>
                 <div class="bg-primary-color p-2 flex text-center justify-center items-center gap-2 rounded hidden xlarger:flex"data-aos="flip-left">
                     <span class="w-5">
-                        <img src="/images/icon/noto_dog.png" alt="" class="w-5 object-cover">
+                        <img src="images/icon/noto_dog.png" alt="" class="w-5 object-cover">
                     </span>
                     <p>
                         Animal and Pet
@@ -174,7 +174,7 @@
             </div>
         </article>
     </section>
-    <section data-aos="fade-right" class="section4 w-full mt-hundred xxl:w-10/12 mx-auto">
+    <section data-aos="fade-right" class="section-four w-full mt-hundred xxl:w-10/12 mx-auto">
         <article class="w-full mx-auto xlarger:grid grid-cols-2 xxl:grid-cols-4 grid-rows-2">
             <div class="w-4/5 mx-auto text-center col-span-2" div data-aos="zoom-in">
                 <div data-aos="fade-right bg-custom-color">
@@ -190,10 +190,10 @@
                 </div>
             </div>
             <div class="w-full h-h-hundred xxl:" div data-aos="zoom-in">
-                <img src="/images/Frame 1622 (1).png" alt="" class="h-h-hundred object-cover w-full">
+                <img src="images/Frame 1622 (1).png" alt="" class="h-h-hundred object-cover w-full">
             </div>
             <div class="w-full p-8 bg-custom-color" data-aos="zoom-in">
-                <div class="w-48 mx-auto flex flex-col gap-4 text-primary-color" >
+                <div class="w-48 mx-auto flex flex-col gap-4 text-primary-color larger:mt-10">
                     <h2 class="font-bold text-base">Books and Hobbies</h2>
                     <p class="leading-5">
                         Feed your passion for reading and hobbies without breaking the bank.
@@ -202,17 +202,17 @@
                 </div>
             </div>
             <div class="w-full h-h-hundred xxl:col-span-2"data-aos="zoom-out">
-                <img src="/images/Frame 1620.png" alt="" class="h-h-hundred object-cover w-full">
+                <img src="images/Frame 1620.png" alt="" class="h-h-hundred object-cover w-full">
             </div>
             <div class="w-full h-h-hundred" data-aos="zoom-out">
-                <img src="/images/Frame 1621.png" alt="" class="h-h-hundred object-cover w-full">
+                <img src="images/Frame 1621.png" alt="" class="h-h-hundred object-cover w-full">
             </div>
             <div class="w-full h-h-hundred hidden xxl:block" data-aos="zoom-out">
-                <img src="/images/Frame 1616.png" alt="" class="h-h-hundred object-cover w-full">
+                <img src="images/Frame 1616.png" alt="" class="h-h-hundred object-cover w-full">
             </div>
         </article>
     </section>
-    <section data-aos="fade-left" class="section5 w-full bg-black text-white pb-10">
+    <section data-aos="fade-left" class="section-five w-full bg-black text-white pb-10">
         <div class="text-center  py-10">
             <h1 class="font-black text-base">How the
                 <span class="text-custom-color">Shopsmart Mobile App Works.</span>
@@ -221,12 +221,12 @@
         </div>
         <article class="w-10/12 mx-auto flex flex-col gap-10 xxl:grid grid-cols-3 grid-rows-3">
         <div class="w-4/5 mx-auto max-w-xs mb-20 xxl:col-start-2 row-start-1 row-end-3">
-            <img src="/images/iPhone 14 Pro Space Black Mockup.png" alt="" class="w-full object-cover">
+            <img src="images/iPhone 14 Pro Space Black Mockup.png" alt="" class="w-full object-cover">
         </div>
             <div>
                 <div class="flex gap-4 pb-5">
                     <span class="w-5">
-                        <img src="/images/icon/noto_light-bulb.png" alt=""
+                        <img src="images/icon/noto_light-bulb.png" alt=""
                             class="w-5 object-cover">
                         </span> <h1 class="font-bold text-sm">Browse Extensive Collections</h1>
                 </div>
@@ -240,7 +240,7 @@
             <div>
                 <div class="flex gap-4 pb-5 row">
                     <span class="w-5">
-                        <img src="/images/icon/noto_light-bulb.png" alt="" class="w-5 object-cover">
+                        <img src="images/icon/noto_light-bulb.png" alt="" class="w-5 object-cover">
                     </span> <h1 class="font-bold text-sm">Smart Recommendations Engine </h1>
                 </div>
                 <p class="leading-5">
@@ -252,7 +252,7 @@
             <div>
                 <div class="flex gap-4 pb-5">
                     <span class="w-5">
-                        <img src="/images/icon/noto_light-bulb.png" alt=""class="w-5 object-cover">
+                        <img src="images/icon/noto_light-bulb.png" alt=""class="w-5 object-cover">
                     </span> <h1 class="font-bold text-sm">Trustworthy Seller Ratings and Reviews </h1>
                 </div>
                 <p class="leading-5">
@@ -265,7 +265,7 @@
             <div>
                 <div class="flex gap-4 pb-5">
                     <span class="w-5">
-                        <img src="/images/icon/noto_light-bulb.png" alt="" class="w-5 object-cover">
+                        <img src="images/icon/noto_light-bulb.png" alt="" class="w-5 object-cover">
                     </span> <h1 class="font-bold text-sm">Instant Chat Support </h1>
                 </div>
                 <p class="leading-5">
@@ -276,7 +276,7 @@
             </div>
         </article>
     </section>
-    <section class="section6 large:flex gap-2 mt-10 justify-evenly w-10/12 mx-auto" data-aos="fade-right">
+    <section class="section-six large:flex gap-2 mt-10 justify-evenly w-10/12 mx-auto" data-aos="fade-right">
         <div class="pt-14 bg-primary-color" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <div class="text-center w-4/5 mx-auto">
                 <h3 class="font-bold text-base pb-5">Buyers</h3>
@@ -286,7 +286,7 @@
                 <button class="bg-custom-color py-2 px-4 mt-4 rounded border border-black border-solid text-primary-color">Become a buyer</button>
             </div>
             <div class="max-w-xs mx-auto" >
-            <img src="/images/Happy woman with shopping bags.png" alt="" class="max-w-full object-cover">
+            <img src="images/Happy woman with shopping bags.png" alt="" class="max-w-full object-cover">
             </div>
         </div>
         <div class="pt-14 bg-primary-color mt-8 large:mt-0" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
@@ -296,28 +296,28 @@
                     your pre-owned items for sale and reach a wide audience
                     of eager buyers. Whatever it's,
                     there's a place for everything on our platform.</p>
-                <button  class="bg-custom-color py-2 px-4 mt-4 rounded border border-black border-solid text-primary-color">List your product</button>
+                <button  class="bg-custom-color py-2 px-4 mt-4 rounded border mb-20 border-black border-solid text-primary-color">List your product</button>
             </div>
-            <div  class="max-w-xs mx-auto mt-4">
-            <img src="/images/fast food worker.png" alt="" class="max-w-full object-cover">
+            <div  class="max-w-xs mx-auto">
+            <img src="images/fast food worker.png" alt="" class="max-w-full object-cover">
             </div>
         </div>
     </section>
-    <section class="section7">
-        <article class="mobile my-10 xlarger:hidden">
+    <section class="section-seven">
+        <article class="mobile my-10 xtra:hidden">
             <div class="heading text-center pb-4 text-2xl font-bold">
                 <p>User Review and <span class="text-custom-color">Testimonial</span></p>
             </div>
             <div class="container-mobile w-10/12 mx-auto flex flex-col gap-2">
                 <div class="boxes-mobile p-4 py-10 bg-fade-color border border-faded-color border-dashed rounded-xl"  data-aos="zoom-out-up">
                     <div class="image w-12 rounded  mb-4">
-                        <img src="/images/Frame 1625 (1).png" alt="" class="w-full object-cover rounded">
+                        <img src="images/Frame 1625 (1).png" alt="" class="w-full object-cover rounded">
                     </div>
                     <div>
                         <p class="text-sm font-bold pb-1">John Doe</p>
                         <div class="flex gap-2">
                             <p>Verified Buyer</p>
-                            <span class="w-4"><img src="/images//icon/icon-park-solid_success.png" alt="" class="w-4 object-cover"></span>
+                            <span class="w-4"><img src="images//icon/icon-park-solid_success.png" alt="" class="w-4 object-cover"></span>
                         </div>
                     </div>
                     <div class="content font-semibold mt-2">
@@ -329,13 +329,13 @@
                 </div>
                 <div class="boxes-mobile p-4 py-10 bg-fade-color border border-faded-color border-dashed rounded-xl" data-aos="zoom-out-up">
                     <div class="image w-12 rounded  mb-4">
-                        <img src="/images/Frame 1625 (1).png" alt="" class="w-full object-cover rounded">
+                        <img src="images/Frame 1625 (1).png" alt="" class="w-full object-cover rounded">
                     </div>
                     <div>
                         <p class="text-sm font-bold pb-1">John Doe</p>
                         <div class="flex gap-2">
                             <p>Verified Buyer</p>
-                            <span class="w-4"><img src="/images//icon/icon-park-solid_success.png" alt="" class="w-4 object-cover"></span>
+                            <span class="w-4"><img src="images//icon/icon-park-solid_success.png" alt="" class="w-4 object-cover"></span>
                         </div>
                     </div>
                     <div class="content">
@@ -347,13 +347,13 @@
                 </div>
                 <div class="boxes-mobile p-4 py-10 bg-fade-color border border-faded-color border-dashed rounded-xl" data-aos="zoom-out-up">
                     <div class="image w-12 rounded  mb-4">
-                        <img src="/images/Frame 1625 (1).png" alt="" class="w-full object-cover rounded">
+                        <img src="images/Frame 1625 (1).png" alt="" class="w-full object-cover rounded">
                     </div>
                     <div>
                         <p class="text-sm font-bold pb-1">John Doe</p>
                         <div class="flex gap-2">
                             <p>Verified Buyer</p>
-                            <span class="w-4"><img src="/images//icon/icon-park-solid_success.png" alt="" class="w-4 object-cover"></span>
+                            <span class="w-4"><img src="images//icon/icon-park-solid_success.png" alt="" class="w-4 object-cover"></span>
                         </div>
                     </div>
                     <div class="content">
@@ -365,13 +365,13 @@
                 </div>
                 <div class="boxes-mobile p-4 py-10 bg-fade-color border border-faded-color border-dashed rounded-xl" data-aos="zoom-out-up">
                     <div class="image w-12 rounded  mb-4">
-                        <img src="/images/Frame 1625 (1).png" alt="" class="w-full object-cover rounded">
+                        <img src="images/Frame 1625 (1).png" alt="" class="w-full object-cover rounded">
                     </div>
                     <div>
                         <p class="text-sm font-bold pb-1">John Doe</p>
                         <div class="flex gap-2">
                             <p>Verified Buyer</p>
-                            <span class="w-4"><img src="/images//icon/icon-park-solid_success.png" alt="" class="w-4 object-cover"></span>
+                            <span class="w-4"><img src="images//icon/icon-park-solid_success.png" alt="" class="w-4 object-cover"></span>
                         </div>
                     </div>
                     <div class="content">
@@ -383,9 +383,9 @@
                 </div>
             </div>
         </article>
-        <article class="my-20 mx-auto hidden xlarger:block" style="width: 750px; overflow-x: hidden;">
-           <div class="contain" style="width: 750px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;">
-            <div class="boxes flex gap-10"  style="width: 750px;">
+        <article class="swiper mySwiper my-20 mx-auto hidden xlarger:block" style="width: 900px; overflow-x: hidden;">
+           <div class="swiper-wrapper contain" style="width: 900px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;">
+            <div class="swiper-slide boxes flex gap-10"  style="width: 750px;">
                 <div class="name p-4">
                     <p>
                         John Doe
@@ -393,7 +393,7 @@
                     <div class="verify flex gap-2">
                         <p>Verified Buyer</p>
                         <span class="w-4 self-center">
-                            <img src="/images/icon/icon-park-solid_success.png" alt="" class="w-4 object-cover">
+                            <img src="images/icon/icon-park-solid_success.png" alt="" class="w-4 object-cover">
                         </span>
                     </div>
                     <div class="content" style="width: 325px;">
@@ -404,10 +404,10 @@
                     </div>
                 </div>
                 <div class="image" style="width: 425px;">
-                    <img src="/images/Frame 1617.png" alt="">
+                    <img src="images/Frame 1617.png" alt="">
                 </div>
             </div>
-            <div class="boxes flex gap-10"  style="width: 750px;">
+            <div class="swiper-slide boxes flex gap-10"  style="width: 750px;">
                 <div class="name p-4">
                     <p>
                         John Doe
@@ -415,7 +415,7 @@
                     <div class="verify flex gap-2">
                         <p>Verified Buyer</p>
                         <span class="w-4 self-center">
-                            <img src="/images/icon/icon-park-solid_success.png" alt="" class="w-4 object-cover">
+                            <img src="images/icon/icon-park-solid_success.png" alt="" class="w-4 object-cover">
                         </span>
                     </div>
                     <div class="content" style="width: 325px;">
@@ -426,10 +426,10 @@
                     </div>
                 </div>
                 <div class="image" style="width: 425px;">
-                    <img src="/images/Frame 1617.png" alt="">
+                    <img src="images/Frame 1617.png" alt="">
                 </div>
             </div>
-            <div class="boxes flex gap-10"  style="width: 750px;">
+            <div class="swiper-slide boxes flex gap-10"  style="width: 750px;">
                 <div class="name p-4">
                     <p>
                         John Doe
@@ -437,7 +437,7 @@
                     <div class="verify flex gap-2">
                         <p>Verified Buyer</p>
                         <span class="w-4 self-center">
-                            <img src="/images/icon/icon-park-solid_success.png" alt="" class="w-4 object-cover">
+                            <img src="images/icon/icon-park-solid_success.png" alt="" class="w-4 object-cover">
                         </span>
                     </div>
                     <div class="content" style="width: 325px;">
@@ -448,10 +448,10 @@
                     </div>
                 </div>
                 <div class="image" style="width: 425px;">
-                    <img src="/images/Frame 1617.png" alt="">
+                    <img src="images/Frame 1617.png" alt="">
                 </div>
             </div>
-            <div class="boxes flex gap-10"  style="width: 750px;">
+            <div class="swiper-slide boxes flex gap-10"  style="width: 750px;">
                 <div class="name p-4">
                     <p>
                         John Doe
@@ -459,7 +459,7 @@
                     <div class="verify flex gap-2">
                         <p>Verified Buyer</p>
                         <span class="w-4 self-center">
-                            <img src="/images/icon/icon-park-solid_success.png" alt="" class="w-4 object-cover">
+                            <img src="images/icon/icon-park-solid_success.png" alt="" class="w-4 object-cover">
                         </span>
                     </div>
                     <div class="content" style="width: 325px;">
@@ -470,63 +470,34 @@
                     </div>
                 </div>
                 <div class="image" style="width: 425px;">
-                    <img src="/images/Frame 1617.png" alt="">
+                    <img src="images/Frame 1617.png" alt="">
                 </div>
             </div>
            </div>
-           
-           <div class="text-center mt-10 flex mx-auto w-60 justify-between">
-          <span class="left bg-custom-color rounded-full text-white text-lg w-12" style=" cursor:pointer;">
-            <
-          </span>
-          <span class="right bg-custom-color rounded-full text-white text-lg w-12"  style=" cursor:  pointer;">
-            >
-          </span>
-        </div>
-        <script>
-            const container = document.querySelector(".contain")
-            const boxes = document.querySelector(".boxes").offsetWidth
-            let  currentIndex = 0;
+           <div class="button">
 
-            function moveToIndex(index){
-                if(index >= 0 && index <= 4)
-                currentIndex = index
-                let translateX = -currentIndex * boxes
-                console.log(translateX)
-                container.style.transform = `translateX(${translateX}px)`
-                container.classList.add("active")
-                if(index==4){
-                 moveToIndex(0)   
-               
-                }
-            }
-            
-            function next(){
-                moveToIndex(currentIndex + 1)
-            }
-            function prev(){
-                moveToIndex(currentIndex - 1)
-            }
-            document.querySelector(".left").addEventListener("click" , prev)
-            document.querySelector(".right").addEventListener("click" , next)
-        </script>
+             <div class="swiper-button-next"></div>
+             <div class="swiper-button-prev"></div>
+           </div>
+             <div class="swiper-pagination"></div>
+         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         </article>
     </section>
-    <section class="section8 bg-black text-white w-full p-2 pb-10" data-aos="fade-right">
+    <section class="section-eight bg-black text-white w-full p-2 pb-10" data-aos="fade-right">
         <h1 class="text-center py-5 font-black text-lg pb-10">Frequently Asked Questions</h1>
         <article class="w-10/12 mx-auto xxl:flex">
             <article class="flex flex-col gap-10 w-10/12 mx-auto">
                 <div class="relative">
-                    <div id="open" class=" flex gap-6">
+                    <div class="open  flex gap-6">
                         <p class="text-sm font-bold">
                             Are the used productss in good condition and reliable? 
 
                         </p> 
                     <span class="w-6">
-                        <img src="/images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover rotate">
+                        <img src="images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover rotate">
                     </span>
                     </div>
-                    <div id="hid"  class="hidden">
+                    <div  class="hidden" id="1">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam repellendus quae
                         sequi vero ex, nemo eum officia. Esse, sunt voluptatum? Modi obcaecati distinctio inventore
                         officia quisquam molestias earum illum.
@@ -538,17 +509,17 @@
                         assumenda adipisci! Dicta, voluptatum inventore.
                     </div>
                 </div>
-                <div id="open">
+                <div class="open">
                     <div class="flex  flex gap-8">
                         <p class="text-sm font-bold">
                             How secure aare the transactions on your website?
                         </p>
                         <span class="w-6">
-                            <img src="/images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover rotate">
+                            <img src="images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover rotate">
                         </span>
                     </div>
-                    
-                    <div id="hid" class="hidden">
+                </div> 
+                    <div class="hidden" id="2">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam repellendus quae
                         sequi vero ex, nemo eum officia. Esse, sunt voluptatum? Modi obcaecati distinctio inventore
                         officia quisquam molestias earum illum.
@@ -560,16 +531,17 @@
                         assumenda adipisci! Dicta, voluptatum inventore.
                     </div>
                 </div>
-                <div id="open">
+                <div class="open">
                     <div class="flex  flex gap-8">
                         <p class="text-sm font-bold">
                             What if i recieve a product that doesn't meet my expectations ?
                         </p>
                         <span class="w-6">
-                            <img src="/images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover rotate">
+                            <img src="images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover rotate">
                         </span>
                     </div>
-                    <div id="hid" class="hidden">
+                </div>
+                    <div class="hidden" id="3">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam repellendus quae
                         sequi vero ex, nemo eum officia. Esse, sunt voluptatum? Modi obcaecati distinctio inventore
                         officia quisquam molestias earum illum.
@@ -581,17 +553,17 @@
                         assumenda adipisci! Dicta, voluptatum inventore.
                     </div>
                 </div>
-                <div id="open">
+                <div class="open">
                     <div class="flex  flex gap-8">
                         <p class="text-sm font-bold">
                             Can i trust the seller on your platform?
                         </p>
                         <span class="w-6">
-                            <img src="/images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover rotate">
+                            <img src="images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover rotate">
                         </span>
                     </div>
-
-                    <div id="hid" class="hidden">
+                </div>
+                    <div class="hidden" id="4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam repellendus quae
                         sequi vero ex, nemo eum officia. Esse, sunt voluptatum? Modi obcaecati distinctio inventore
                         officia quisquam molestias earum illum.
@@ -603,16 +575,17 @@
                         assumenda adipisci! Dicta, voluptatum inventore.
                     </div>
                 </div>
-                <div  id="open">
+                <div class="open">
                     <div class="flex  flex gap-8">
                         <p class="text-sm font-bold">
                             How do i sell my used items on your website?
                         </p>
                         <span class="w-6">
-                            <img src="/images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover ">
+                            <img src="images/icon/ri_arrow-down-s-fill.png" alt="" class="w-6 object-cover ">
                         </span>
                         </div>
-                    <div id="hid" class="hidden">
+                     </div>    
+                    <div class="hidden" id="5">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam repellendus quae
                         sequi vero ex, nemo eum officia. Esse, sunt voluptatum? Modi obcaecati distinctio inventore
                         officia quisquam molestias earum illum.
@@ -626,30 +599,13 @@
                 </div>
             </article>
             <article>
-                <div class="doodle max-w-xs hidden xxl:block">
-                     <!-- <div>
-            <dotlottie-player class="hidden " src="https://lottie.host/e3a0b2ac-e4ac-459a-8586-2215b6d668b0/QrpwxvZDf1.json" background="transparent" speed="0.5" style="width: 200px; height: 200px;" loop autoplay></dotlottie-player>
-        </div> -->
-                    <img src="/images/Busnesswoman thinking about work with questions hanging over her head.png" alt="" class="">
+                <div class="doodle max-w-xs xxl:block">
+                    <img src="images/Busnesswoman thinking about work with questions hanging over her head.png" alt="" class="">
                 </div>
             </article>
         </article>
-        <script>
-            const rotate = document.querySelector(".rotate")
-            const hide = document.getElementById("hid")
-            document.getElementById("open").addEventListener("click", ()=>{
-            if(hide.classList.contains("hidden")){
-                hide.classList.remove("hidden")
-                rotate.style.transform = "rotate(180deg)"
-            }
-            else{
-                hide.classList.add("hidden")
-                rotate.style.transform = "rotate(0deg)"
-            }
-}) 
-        </script>
         </section>
-        <section class="section9 w-full bg-custom-color text-primary-color xtra:flex xtra:w-10/12 mx-auto xtra:my-20 xtra:rounded-xl" data-aos="fade-left">
+    <section class="section-nine w-full bg-custom-color text-primary-color xtra:flex xtra:w-10/12 mx-auto xtra:my-20 xtra:rounded-xl" data-aos="fade-left">
         <article>
             <div class="w-10/12 mx-auto pt-10 text-center flex flex-col gap-4">
                 <h1 class="font-bold text-xl">Download our App on Android and iOS</h1>
@@ -662,7 +618,7 @@
                 <div class="bg-black px-2 py-2 text-primary-color rounded-xl">
                     <a href="#" class="flex gap-4 relative">
                         <span class="self-center">
-                            <img src="/images/icon/Google Play.png" class="w-5 object-cover" alt="">
+                            <img src="images/icon/Google Play.png" class="w-5 object-cover" alt="">
                         </span>
                         <p>GET IT ON <br>
                            Google Play
@@ -672,7 +628,7 @@
                 <div class="bg-black px-2 py-2 text-primary-color rounded-xl">
                     <a href="#" class="flex gap-4 relative">
                         <span class="self-center">
-                            <img src="/images/icon/Apple Logo.png"  class="w-5 object-cover"alt="">
+                            <img src="images/icon/Apple Logo.png"  class="w-5 object-cover"alt="">
                         </span>
                         <p class="text">Download on the <br>
                            <span>App Store</span>
@@ -684,22 +640,22 @@
         <article>
             <div class="last-div w-10/12 mx-auto mt-10">
                 <div class="max-w-xs mx-auto">
-                <img src="/images/Group 1.png" alt="" class="max-w-full object-cover xtra:hidden">
+                <img src="images/Group 1.png" alt="" class="max-w-full object-cover xtra:hidden">
                 </div>
-                <img src="/images/Group 1 (1).png" alt="" class="show-desktop hidden xtra:block">
+                <img src="images/Group 1 (1).png" alt="" class="show-desktop hidden xtra:block">
             </div>
         </article>
         </section>
-        <footer data-aos="fade-right" class="bg-black text-white px-4 py-8 flex flex-col gap-6">
+    <footer data-aos="fade-right" class="bg-black text-white px-4 py-8 flex flex-col gap-6">
             <div class="icons flex gap-4">
                 <div class="w-5">
-                    <img src="/images/skill-icons_twitter.png" alt="" class="w-5 object-cover">
+                    <img src="images/skill-icons_twitter.png" alt="" class="w-5 object-cover">
                 </div>
                 <div class="w-5">
-                    <img src="/images/flat-color-icons_google.png" alt="" class="w-5 object-cover">
+                    <img src="images/flat-color-icons_google.png" alt="" class="w-5 object-cover">
                 </div>
                 <div  class="w-5">
-                    <img src="/images/logos_facebook.png" alt=""  class="w-5 object-cover">
+                    <img src="images/logos_facebook.png" alt=""  class="w-5 object-cover">
                 </div>
             </div>
             <div class="self-center">
@@ -708,14 +664,8 @@
             <div class="self-center">
                 <p>All Rights Reserved 2023</p>
             </div>
-        </footer>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init( {
-                duration: 1000,
-            });
-
-</script>
+    </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>

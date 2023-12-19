@@ -32,7 +32,7 @@ module.exports = {
         'larger' : '700px', 
         'xlarger' : '750px',
         'extra': "800px",
-        'xtra' : '970px',
+        'xtra' : '900px',
         'xxl' : '1200px' ,
         'desktop' : '1300px',
         'xl' : '1400px',

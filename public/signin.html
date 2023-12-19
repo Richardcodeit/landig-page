@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow-y: hidden;
+        }
+
+        body .desktop-content {
+            display: none;
+        }
+
+        form {
+            margin: 0 auto;
+            margin-top: 10vh;
+            height: 100vh;
+            width: 80%;
+        }
+
+        form .content {
+            margin-bottom: 60px;
+        }
+
+        form .inputs .input {
+            position: relative;
+            width: 100%;
+            height: 30px;
+            margin-bottom: 50px;
+        }
+
+        form .inputs .input input {
+            appearance: none;
+            border: 1px solid black;
+            border-radius: 5px;
+            outline: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        form .inputs .input label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: rgb(88, 88, 88);
+            transition: all .5s ease-in-out;
+        }
+
+        .inputs input:focus~label,
+        .inputs input:valid~label {
+            top: -25px;
+            left: 2px;
+            color: black;
+        }
+
+        button {
+            width: 100%;
+            height: 30px;
+            background-color: #E74C3C;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+
+        span {
+            font-size: larger;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        a {
+            color: #E74C3C;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .inputs>p {
+            text-align: center;
+        }
+
+        @media screen and (min-width:1000px) {
+
+            .container-signIn {
+                display: flex;
+                gap: 50px;
+            }
+
+            body .desktop-content {
+                position: relative;
+                display: block;
+                height: 100dvb;
+                width: 70%;
+                background-color: #E74C3C;
+                color: white;
+                padding: 20px;
+                margin: 0;
+            }
+
+            body .desktop-content .first-image,
+            body .desktop-content .second-image {
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            body .desktop-content .first-image {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+            body .desktop-content .second-image {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+            body .desktop-content img {
+                width: 100%;
+                height: 100%;
+            }
+
+            form {
+                margin-right: 20px;
+            }
+        }
+
+        @media screen and (min-width:1200px) {
+            form {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-signIn">
+        <div class="desktop-content">
+            <h1>M.Markt</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At nemo, eum, doloremque deleniti ipsam ipsa
+                necessitatibus animi voluptates iure suscipit molestiae dolorem ex est quod tenetur vero modi ab. Qui?
+                Error quaerat maxime similique, porro, repellat illo, numquam quo aut beatae assumenda pariatur
+                aspernatur? Dolor repellat vel illum. Esse expedita eos eum qui quam earum ipsum architecto molestiae
+                animi distinctio!
+                Atque corrupti reiciendis inventore consequatur numquam alias perspiciatis facilis hic. Fugiat dicta cum
+                praesentium ipsam quaerat pariatur aspernatur recusandae optio, corporis cumque illum debitis
+                repudiandae officiis repellat. Iste, maxime corrupti.
+                Autem eius, iusto, accusantium totam officia modi aspernatur inventore labore iste earum vel nam
+                obcaecati repudiandae voluptate in! Doloremque dicta sint, ab inventore porro ducimus optio quisquam sed
+                dolor fuga.
+                Nihil necessitatibus nam quidem voluptas et ut beatae, illum veritatis, natus eligendi, accusantium enim
+                id quod dolore corporis eos possimus velit magnam molestiae. Voluptas dicta odio, blanditiis labore
+                nostrum eius?
+                Nihil necessitatibus nam quidem voluptas et ut beatae, illum veritatis, natus eligendi, accusantium enim
+                id quod dolore corporis eos possimus velit magnam molestiae. Voluptas dicta odio, blanditiis labore
+                nostrum eius?
+                llam fugit iusto maxime rerum eius, quis architecto. Veritatis suscipit repellendus dolorem laborum,
+                quibusdam adipisci nam ipsum iste beatae magnam.
+                llam fugit iusto maxime rerum eius, quis architecto. Veritatis suscipit repellendus dolorem laborum,
+                quibusdam adipisci nam ipsum iste beatae magnam.
+            <div class="first-image">
+                <img src="/images/Happy woman with shopping bags.png" alt="">
+            </div>
+            <div class="second-image">
+                <img src="/images/fast food worker.png" alt="">
+            </div>
+        </div>
+        <form action="#" method="get" id="body">
+            <div class="content">
+                <h2>Explore the Marketplace Today!</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In soluta praesentium blanditiis amet
+                </p>
+            </div>
+            <div class="inputs">
+                <div class="input">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                    <p class="error"></p>
+                </div>
+                <div class="input">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                    <span onclick="hide()" id="span">*</span>
+                    <p class="error"></p>
+                </div>
+                <button>Login</button>
+                <p>Don't have an account ?<a href="#">create the account</a></p>
+            </div>
+            <script>
+                   const hide = ()=>{
+                        const span = document.getElementById("span")
+                        const passWord = document.getElementById("password")
+                        span.innerHTML = "+"
+                        if(span.innerHTML === "+"){
+                            function open(){
+                            passWord.setAttribute("type" , "password")
+                            span.innerHTML = "*"
+                            }
+                            span.addEventListener("click" , open)
+                            console.log("helloe")
+                        }
+                        passWord.setAttribute("type" , "text")
+                    }
+                    const body = document.getElementById("body")
+                    body,addEventListener("click" , bod)
+                    function bod(e){
+                        const input = document.querySelector(".input")
+                        input.setAttribute("type" , "email")
+                        console.log(e.target)
+                    }
+                
+                // const object = {
+                //     name: 'SyntaxError1,',
+                //     message: 'SOME ERROR MESSAGE'
+                // }
+                // async function checkEmailAvailability() {
+                //     const emialAlreadyExists = await fetch("https://api-domain.com/users/email/verify1");
+                //     if (emialAlreadyExists) {
+                //         throw new Error("this email is unavailable")
+                //     }
+                // }
+                // try {
+                //     const mailInputEL = 'LKSJFLKSJDLKF'
+                //     fetch("https://api-domain.com/users/email/verify1").then((emialAlreadyExists) => {
+                //         if (emialAlreadyExists) {
+                //             throw new Error("this email is unavailable")
+                //         }
+                //     }).catch((error) => {
+                //         throw error;
+                //     })
+                //     checkEmailAvailability()
+                // }
+                // catch (error) {
+                //     emailInputValidationMsg$L.
+                // }
+
+            </script>
+        </form>
+    </div>
+</body>
+
+</html>
